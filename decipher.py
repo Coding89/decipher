@@ -1,4 +1,5 @@
 #encrypt + decrypt texts + print output of either
+# encrypt text on line 5 in the ""
 def encrypt(text, shift):
     text = text.lower()
     encrypted_text = ""
@@ -8,7 +9,7 @@ def encrypt(text, shift):
         else:
             encrypted_text += char
     return encrypted_text
-
+# decrypt text on line 15 in the ""
 def decrypt(text, shift):
     text = text.lower()
     decrypted_text = ""
@@ -19,5 +20,7 @@ def decrypt(text, shift):
             decrypted_text += char
     return decrypted_text
 
-secret = ""
-print(decrypt(secret, 3))
+if __name__ == "__main__":
+
+    secret = ""
+    print(decrypt(secret, 3))
