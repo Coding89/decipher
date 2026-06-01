@@ -1,4 +1,4 @@
-#encrypt and decrypt texts + print output of either
+#encrypt + decrypt texts + print output of either
 def encrypt(text, shift):
     text = text.lower()
     encrypted_text = ""
