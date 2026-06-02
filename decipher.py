@@ -1,5 +1,12 @@
-#encrypt + decrypt texts + print output of either
-# encrypt text on line 5 in the ""
+"""
+Caesar Cipher Module
+Provides functions to encrypt and decrypt text.
+
+The first part "encrypt" forces a string to lowercase, then shifts letters forward in the English alphabet with no impact 
+on non-alphabet characters such as numerals.
+
+The second part "decrypt" forces a string to lowercase, then shifts letters backward in the English alphabet with no impact on non-alphabet characters.
+"""
 def encrypt(text, shift):
     text = text.lower()
     encrypted_text = ""
@@ -9,7 +16,7 @@ def encrypt(text, shift):
         else:
             encrypted_text += char
     return encrypted_text
-# decrypt text on line 15 in the ""
+
 def decrypt(text, shift):
     text = text.lower()
     decrypted_text = ""
@@ -21,6 +28,7 @@ def decrypt(text, shift):
     return decrypted_text
 
 if __name__ == "__main__":
-
+#Example execution: decrypt a secret message with a shift key of 3
     secret = ""
+#Change the "decrypt" to "encrypt" if you want to encrypt the text.
     print(decrypt(secret, 3))
