@@ -3,7 +3,7 @@ Caesar Cipher Module
 Provides functions to encrypt and decrypt text.
 
 The first part "encrypt" forces a string to lowercase, then shifts letters forward in the English alphabet with no impact 
-on non-alphabet characters such as numerals.
+on non-alphabet characters such as numerals or symbols.
 
 The second part "decrypt" forces a string to lowercase, then shifts letters backward in the English alphabet with no impact on non-alphabet characters.
 """
